@@ -1,20 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aprendendo Flask com Profa Alba</title>
-</head>
-<body>
+{% extends 'base.html' %}
 
-    <h2>Olá, Hello {{nome}}!</h2>
+    {% block conteudo %}
 
-    <p>
-        Profissão: {{dados.profissão}}<br/>
-        Canal no Youtube: {{dados.canal}}
-
-    </p>
+    <h2>Aqui você encontra os dados pra entrar em contato comigo, ok.</h2>
     
-</body>
-</html>
+    {% endblock %}

@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aprendendo Flask com Profa Alba</title>
-</head>
-<body>
-    <nav>
-        <a href="/index">Página Inicial</a>
-        <a href="/contato">Contato</a>
-    </nav>
+    {% extends 'base.html' %}
+
+    {% block conteudo %}
+
     <h2>Olá, Hello {{nome}}!</h2>
 
     <p>
@@ -19,5 +10,5 @@
 
     </p>
     
-</body>
-</html>
+
+    {% endblock %}
